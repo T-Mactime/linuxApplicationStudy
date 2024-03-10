@@ -1,4 +1,11 @@
-CC=gcc
+ARCH=x86
+
+ifeq ($(ARCH), x86)
+	CC=gcc
+else ifeq ($(ARCH), arm)
+	CC=arm-linux-gnueabihf-gcc-8 
+endif
+
 CFLAGS=-g -O0 -Wall
 
 target=beep
