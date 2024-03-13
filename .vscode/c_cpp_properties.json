@@ -4,9 +4,7 @@
             "name": "Linux",
             "includePath": [
                 "${workspaceFolder}/**",
-                "/home/sch/Documents/ebf_linux_kernel_mp157_depth1/build_image/build/**",
-                "/home/sch/Documents/ebf_linux_kernel_mp157_depth1/build_image/build/debian/hdrtmp/usr/src/linux-headers-4.19.94-stm-r1/include",
-                "/usr/include/x86_64-linux-gnu"
+                "/home/sch/Documents/ebf_linux_kernel_mp157_depth1/build_image/build/**"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/gcc",
