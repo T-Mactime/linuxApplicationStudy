@@ -3,13 +3,16 @@
         {
             "name": "Linux",
             "includePath": [
-                "${workspaceFolder}/**"
+                "${workspaceFolder}/**",
+                "/home/sch/Documents/ebf_linux_kernel_mp157_depth1/build_image/build/**",
+                "/home/sch/Documents/ebf_linux_kernel_mp157_depth1/build_image/build/debian/hdrtmp/usr/src/linux-headers-4.19.94-stm-r1/include",
+                "/usr/include/x86_64-linux-gnu"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/gcc",
             "cStandard": "c17",
             "cppStandard": "gnu++14",
-            "intelliSenseMode": "linux-gcc-x64",
+            "intelliSenseMode": "linux-gcc-arm",
             "compilerArgs": [
                 "-std=gnu99"
             ]
