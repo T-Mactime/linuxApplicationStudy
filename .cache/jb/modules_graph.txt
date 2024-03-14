@@ -1,0 +1,4 @@
+2
+0
+{"Hash":"","Name":"","Path":"/home/sch/Documents/code/linux_kernel/hellomodule/hellomodule.mod.c"}
+{"Hash":"","Name":"","Path":"/home/sch/Documents/code/linux_kernel/hellomodule/hellomodule.c"}

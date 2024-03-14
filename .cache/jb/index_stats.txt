@@ -1,0 +1,266 @@
+Number of errors = 12
+Number of compiled modules = 0
+No failed modules
+File /home/sch/Documents/code/linux_kernel/hellomodule/hellomodule.c: 8 errors
+[0, 0]  - unknown argument: '-fno-ipa-sra'
+[0, 0]  - unknown argument: '-fno-var-tracking-assignments'
+[0, 0]  - unknown argument: '-fconserve-stack'
+[0, 0]  - unsupported option '-mabi=' for target 'x86_64-unknown-linux-gnu'
+[0, 0]  - optimization flag '-fno-inline-functions-called-once' is not supported
+[0, 0]  - optimization flag '-fmerge-constants' is not supported
+[0, 0]  - unknown target CPU 'armv7-a'
+[0, 0]  - module map file '/home/sch/Documents/code/.cache/jb/module.modulemap' not found
+File /home/sch/Documents/code/linux_kernel/hellomodule/hellomodule.mod.c: 8 errors
+[0, 0]  - unknown argument: '-fno-ipa-sra'
+[0, 0]  - unknown argument: '-fno-var-tracking-assignments'
+[0, 0]  - unknown argument: '-fconserve-stack'
+[0, 0]  - unsupported option '-mabi=' for target 'x86_64-unknown-linux-gnu'
+[0, 0]  - optimization flag '-fno-inline-functions-called-once' is not supported
+[0, 0]  - optimization flag '-fmerge-constants' is not supported
+[0, 0]  - unknown target CPU 'armv7-a'
+[0, 0]  - module map file '/home/sch/Documents/code/.cache/jb/module.modulemap' not found
+Processed 2 TUs in
+ - real time = 902ms
+ - indexing CPU time = 1451ms
+ - symbols writing CPU time = 11ms
+ - symbols reading CPU time = 0ms
+ - waiting to finish time = 137ms
+TU [/home/sch/Documents/code/linux_kernel/hellomodule/hellomodule.c] processed in 696ms and succeed.
+TU [/home/sch/Documents/code/linux_kernel/hellomodule/hellomodule.mod.c] processed in 755ms and succeed.
+
+WAIT TIME:
+Waiting for symbol files took 0ms
+Waiting for modules took 0ms of CPU time
+
+PROCESSED TIMES:
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/generated/utsrelease.h processed 1 times
+File /home/sch/Documents/code/linux_kernel/hellomodule/hellomodule.c processed 1 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/build-salt.h processed 1 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/vermagic.h processed 1 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/elfnote.h processed 1 times
+File /home/sch/Documents/code/linux_kernel/hellomodule/hellomodule.mod.c processed 1 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/types.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/asm-generic/bitops/lock.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/kasan-checks.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/uapi/linux/elf-em.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/build_bug.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/kobject.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/uapi/linux/posix_types.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/bug.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/timekeeping32.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/arch/arm/include/asm/cache.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/rbtree.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/rwlock_api_smp.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/numa.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/atomic.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/uapi/linux/timex.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/arch/arm/include/asm/memory.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/const.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/asm-generic/percpu.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/pageblock-flags.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/cache.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/time64.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/arch/arm/include/uapi/asm/auxvec.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/jump_label.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/arch/arm/include/asm/linkage.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/timer.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel/build_image/build/arch/arm/include/generated/asm/rwsem.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/idr.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/ktime.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/arch/arm/include/asm/smp.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/arch/arm/include/asm/ptrace.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/typecheck.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/asm-generic/cmpxchg-local.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/llist.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/arch/arm/include/asm/atomic.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/tracepoint-defs.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/uapi/linux/errno.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/uapi/linux/swab.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/bitops.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/rcutree.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/uapi/linux/string.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/arch_topology.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/timex.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/asm-generic/bitops/ffz.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/rcupdate.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/kref.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel/build_image/build/arch/arm/include/generated/asm/preempt.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/arch/arm/include/asm/glue.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/generated/timeconst.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/uapi/linux/types.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/smp.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/asm-generic/barrier.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/arch/arm/include/asm/fpstate.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/uapi/linux/param.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/stddef.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/arch/arm/include/asm/vdso_datapage.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/swab.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/percpu.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/asm-generic/irqflags.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/asm-generic/bitops/sched.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/asm-generic/bitops/builtin-fls.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/bits.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/stat.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/asm-generic/int-ll64.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/asm-generic/bug.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/arch/arm/include/asm/thread_info.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/asm-generic/memory_model.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/spinlock_api_smp.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/mmdebug.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/debugobjects.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/errno.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/module.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/irqflags.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/arch/arm/include/asm/compiler.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/rwlock_types.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/sizes.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/asm-generic/bitops/non-atomic.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/bottom_half.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/arch/arm/include/asm/module.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/arch/arm/include/asm/timex.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/uapi/asm-generic/errno.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/timekeeping.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/arch/arm/include/uapi/asm/byteorder.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/umh.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/asm-generic/bitops/builtin-__fls.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/highuid.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/completion.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/uapi/linux/time.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/rcu_segcblist.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/arch/arm/include/asm/div64.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/byteorder/generic.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/list.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/arch/arm/include/asm/auxvec.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/wait.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/generated/bounds.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/rwsem.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/arch/arm/include/uapi/asm/ptrace.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/uapi/linux/const.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/notifier.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/pfn.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/linkage.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/lockdep.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/asm-generic/param.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/generated/autoconf.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/asm-generic/error-injection.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/asm-generic/current.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/time32.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/arch/arm/include/asm/bug.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/arch/arm/include/asm/unified.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/asm-generic/bitops/builtin-ffs.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/workqueue.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/arch/arm/include/asm/processor.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/jiffies.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/asm-generic/atomic-long.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/dynamic_debug.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/asm-generic/rwsem.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/thread_info.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/uapi/linux/sysctl.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/kernel.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/kconfig.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/elf.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/stringify.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel/build_image/build/<built-in> processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/osq_lock.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/preempt.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/uapi/asm-generic/errno-base.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/uapi/asm-generic/param.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/radix-tree.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/sysfs.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/compiler_types.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/srcu.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/asm-generic/module.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/arch/arm/include/asm/cmpxchg.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/gfp.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/arch/arm/include/asm/pgtable-2level-types.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/asm-generic/bitops/const_hweight.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/bitmap.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/arch/arm/include/uapi/asm/posix_types.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/arch/arm/include/asm/opcodes.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/asm-generic/bitops/hweight.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/poison.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/time.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/page-flags-layout.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/arch/arm/include/uapi/asm/types.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/uapi/linux/kernel.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/debug_locks.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/asm-generic/getorder.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/kobject_ns.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/asm-generic/topology.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel/build_image/build/<command line> processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/refcount.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/uidgid.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/uapi/asm-generic/bitsperlong.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/mutex.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/arch/arm/include/asm/user.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/arch/arm/include/uapi/asm/hwcap.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/arch/arm/include/uapi/asm/stat.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/kern_levels.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/arch/arm/include/asm/spinlock.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/uapi/linux/sysinfo.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/cpumask.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/percpu-defs.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/asm-generic/bitops/find.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/restart_block.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/rwlock.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/asm-generic/bitops/ext2-atomic-setbit.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/arch/arm/include/asm/percpu.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/uapi/linux/stat.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/uapi/linux/byteorder/little_endian.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/asm-generic/bitops/arch_hweight.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/rcu_node_tree.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/arch/arm/include/asm/page.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/printk.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/compiler-clang.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/srcutree.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/sysctl.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/moduleparam.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/uapi/linux/wait.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/error-injection.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/init.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/spinlock.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/string.h processed 2 times
+File /usr/lib/gcc-cross/arm-linux-gnueabihf/8/include/stdarg.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/memory_hotplug.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/uapi/linux/stddef.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/byteorder/little_endian.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/asm-generic/div64.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/asm-generic/bitops/builtin-__ffs.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/asm-generic/preempt.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/arch/arm/include/asm/hw_breakpoint.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/arch/arm/include/asm/irqflags.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/export.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/threads.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/log2.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/spinlock_types.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/asm-generic/bitsperlong.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/seqlock.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/arch/arm/include/asm/topology.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/asm-generic/bitops/fls64.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/static_key.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/arch/arm/include/asm/elf.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/arch/arm/include/asm/barrier.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/uapi/asm-generic/posix_types.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/arch/arm/include/asm/bitops.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/topology.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/uapi/linux/elf.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/prefetch.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/uapi/asm-generic/int-ll64.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/err.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/rbtree_latch.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/arch/arm/include/asm/spinlock_types.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/math64.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/arch/arm/include/uapi/asm/swab.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/nodemask.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/kmod.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/arch/arm/include/asm/hwcap.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/arch/arm/include/asm/string.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/asm-generic/bitops/le.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/arch/arm/include/asm/swab.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/kernfs.h processed 2 times
+File /home/sch/Documents/ebf_linux_kernel/build_image/build/arch/arm/include/generated/asm/current.h processed 4 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/mmzone.h processed 4 times
+File /home/sch/Documents/ebf_linux_kernel_mp157_depth1/include/linux/compiler.h processed 4 times
+File /home/sch/Documents/ebf_linux_kernel/build_image/build/arch/arm/include/generated/uapi/asm/param.h processed 4 times
+File /home/sch/Documents/ebf_linux_kernel/build_image/build/arch/arm/include/generated/uapi/asm/errno.h processed 4 times
+File /home/sch/Documents/ebf_linux_kernel/build_image/build/arch/arm/include/generated/uapi/asm/bitsperlong.h processed 6 times

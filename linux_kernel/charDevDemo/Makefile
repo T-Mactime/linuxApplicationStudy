@@ -1,16 +1,17 @@
 KERNEL_DIR=/home/sch/Documents/ebf_linux_kernel/build_image/build
+
 ARCH=arm
 CROSS_COMPILE=arm-linux-gnueabihf-
 export  ARCH  CROSS_COMPILE
 
-obj-m := hellomodule.o
+obj-m := chardev.o
+out =  chrdev_test
+
 all:
 	$(MAKE) -C $(KERNEL_DIR) M=$(CURDIR) modules
+	$(CROSS_COMPILE)gcc -o $(out) main.c
 
-.PHONE:clean copy
-
+.PHONY:clean
 clean:
-	$(MAKE) -C $(KERNEL_DIR) M=$(CURDIR) clean	
-
-copy:
-	sudo  cp  *.ko  /home/embedfire/workdir
+	$(MAKE) -C $(KERNEL_DIR) M=$(CURDIR) clean
+	rm $(out)

@@ -4,16 +4,16 @@
             "name": "Linux",
             "includePath": [
                 "${workspaceFolder}/**",
-                "/usr/arm-linux-gnueabihf/include/**"
+                "/home/sch/Documents/ebf_linux_kernel/build_image/build/**"
             ],
             "defines": [],
             "compilerPath": "",
             "cStandard": "c99",
             "cppStandard": "gnu++14",
-            "intelliSenseMode": "linux-gcc-arm",
             "compilerArgs": [
                 "-std=gnu99"
-            ]
+            ],
+            "intelliSenseMode": "linux-gcc-arm"
         }
     ],
     "version": 4

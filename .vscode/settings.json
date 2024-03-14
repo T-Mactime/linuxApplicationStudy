@@ -2,6 +2,10 @@
     "files.associations": {
         "module.h": "c",
         "init.h": "c",
-        "kernel.h": "c"
+        "kernel.h": "c",
+        "uaccess.h": "c",
+        "cdev.h": "c",
+        "kobject.h": "c",
+        "fs.h": "c"
     }
 }
