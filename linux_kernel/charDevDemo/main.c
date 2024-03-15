@@ -20,7 +20,7 @@ int main(){
 
     read(fd, buf, 128);
 
-    pirntf("the con %s\n", buf);
+    printf("the con %s\n", buf);
 
     close(fd);
     return 0;

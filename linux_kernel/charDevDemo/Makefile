@@ -14,4 +14,4 @@ all:
 .PHONY:clean
 clean:
 	$(MAKE) -C $(KERNEL_DIR) M=$(CURDIR) clean
-	rm $(out)
+	rm -f $(out)
