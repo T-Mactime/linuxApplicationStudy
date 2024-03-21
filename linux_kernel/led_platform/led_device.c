@@ -54,15 +54,17 @@ static struct resource bled_resource[] = {
     [4] = DEFINE_RES_MEM(GPIOB_BSRR, 4),
     [5] = DEFINE_RES_MEM(RCC_MP_GPIOENA, 4),
 };
-
-static void led_release(struct device *dev)
-{
+/* not used */
+static void led_release(struct device* dev) {
+    return;
 }
 
+/* led hardware information */
 unsigned int rled_hwinfo[2] = {13, 0};
 unsigned int gled_hwinfo[2] = {2, 6};
 unsigned int bled_hwinfo[2] = {5, 1};
 
+/* red led device */
 static struct platform_device rled_pdev = {
     .name = "led_pdev",
     .id = 0,
@@ -73,10 +75,10 @@ static struct platform_device rled_pdev = {
         .platform_data = rled_hwinfo,
     },
 };
-
+/* green led device */
 static struct platform_device gled_pdev = {
     .name = "led_pdev",
-    .id = 0,
+    .id = 1,
     .num_resources = ARRAY_SIZE(gled_resource),
     .resource = gled_resource,
     .dev = {
@@ -84,10 +86,10 @@ static struct platform_device gled_pdev = {
         .platform_data = gled_hwinfo,
     },
 };
-
+/* blue led device */
 static struct platform_device bled_pdev = {
     .name = "led_pdev",
-    .id = 0,
+    .id = 2,
     .num_resources = ARRAY_SIZE(bled_resource),
     .resource = bled_resource,
     .dev = {
@@ -96,23 +98,18 @@ static struct platform_device bled_pdev = {
     },
 };
 
-static __init int led_pdev_init(void)
-{
+static __init int led_pdev_init(void) {
     printk("pdev init\n");
-
     platform_device_register(&rled_pdev);
     platform_device_register(&gled_pdev);
     platform_device_register(&bled_pdev);
-
     return 0;
 }
 
 module_init(led_pdev_init);
 
-static __exit void led_pdev_exit(void) 
-{
+static __exit void led_pdev_exit(void) {
     printk("pdev exit\n");
-
     platform_device_unregister(&rled_pdev);
     platform_device_unregister(&gled_pdev);
     platform_device_unregister(&bled_pdev);
@@ -120,5 +117,5 @@ static __exit void led_pdev_exit(void)
 
 module_exit(led_pdev_exit);
 
-MODULE_AUTHOR("SCH");
+MODULE_AUTHOR("embedfire");
 MODULE_LICENSE("GPL");

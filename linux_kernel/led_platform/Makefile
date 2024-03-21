@@ -1,4 +1,4 @@
-KERNEL_DIR=/home/sch/Documents/ebf_linux_kernel_mp157_depth1/build_image/build
+#KERNEL_DIR=$(ARM_KERNEL_DIR)
 
 ARCH=arm
 CROSS_COMPILE=arm-linux-gnueabihf-
@@ -8,8 +8,8 @@ obj-m := led_device.o led_driver.o
 
 
 all:
-	$(MAKE) -C $(KERNEL_DIR) M=$(CURDIR) modules
+	$(MAKE) -C $(KERNER_DIR) M=$(CURDIR) modules
 
 clean:
-	$(MAKE) -C $(KERNEL_DIR) M=$(CURDIR) clean
+	$(MAKE) -C $(KERNER_DIR) M=$(CURDIR) clean
 

@@ -1,7 +1,7 @@
+#include <linux/cdev.h>
+#include <linux/fs.h>
 #include <linux/init.h>
 #include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/cdev.h>
 #include <linux/uaccess.h>
 
 #define DEV_NAME "EmbedChardev"
@@ -19,10 +19,10 @@ char buf1[BUFF_SIZE];
 char buf2[BUFF_SIZE];
 
 // 定义了四种行为，开启，释放，写， 读
-static int chr_dev_open(struct inode *inode, struct file *filp);
-static int chr_dev_release(struct inode *inode, struct file *filp);
-static int chr_dev_write(struct file *filp, const char __user *buf, size_t count, loff_t *ppos);
-static int chr_dev_read(struct file *filp, char __user *buf, size_t count, loff_t *ppos);
+static int chr_dev_open(struct inode* inode, struct file* filp);
+static int chr_dev_release(struct inode* inode, struct file* filp);
+static int chr_dev_write(struct file* filp, const char __user* buf, size_t count, loff_t* ppos);
+static int chr_dev_read(struct file* filp, char __user* buf, size_t count, loff_t* ppos);
 
 // 文件操作符与回调函数
 static struct file_operations chr_dev_fops = {
@@ -38,13 +38,11 @@ static struct file_operations chr_dev_fops = {
  * 1. 设备号获取
  * 2. 配置缓存空间
  */
-static int chr_dev_open(struct inode *inode, struct file *filp)
-{
+static int chr_dev_open(struct inode* inode, struct file* filp) {
     printk("open\n");
 
     // 从给定设备中取出设备号
-    switch (MINOR(inode->i_rdev))
-    {
+    switch (MINOR(inode->i_rdev)) {
     case 0:
         // 私有buffer
         filp->private_data = buf1;
@@ -61,29 +59,25 @@ static int chr_dev_open(struct inode *inode, struct file *filp)
 /**
  * 设备释放
  */
-static int chr_dev_release(struct inode *inode, struct file *filp)
-{
+static int chr_dev_release(struct inode* inode, struct file* filp) {
     printk("release \n");
     return 0;
 }
 
-// 写数据， 
-static int chr_dev_write(struct file *filp, const char __user *buf, size_t count, loff_t *ppos)
-{
+// 写数据，
+static int chr_dev_write(struct file* filp, const char __user* buf, size_t count, loff_t* ppos) {
     // printk("write sone info");
 
     unsigned long p = *ppos;
     int ret;
-    char *vbuf = filp->private_data;
+    char* vbuf = filp->private_data;
     int tmp = count;
 
-    if (p > BUFF_SIZE)
-    {
+    if (p > BUFF_SIZE) {
         return 0;
     }
 
-    if (tmp > BUFF_SIZE - p)
-    {
+    if (tmp > BUFF_SIZE - p) {
         tmp = BUFF_SIZE - p;
     }
 
@@ -92,19 +86,16 @@ static int chr_dev_write(struct file *filp, const char __user *buf, size_t count
     return tmp;
 }
 
-static ssize_t chr_dev_read(struct file *filp, char __user *buf, size_t count, loff_t *ppos)
-{
+static ssize_t chr_dev_read(struct file* filp, char __user* buf, size_t count, loff_t* ppos) {
     unsigned long p = *ppos;
     int ret;
     int tmp = count;
-    char *vbuf = filp->private_data;
-    if (p > BUFF_SIZE)
-    {
+    char* vbuf = filp->private_data;
+    if (p > BUFF_SIZE) {
         return 0;
     }
 
-    if (tmp > BUFF_SIZE - p)
-    {
+    if (tmp > BUFF_SIZE - p) {
         tmp = BUFF_SIZE - p;
     }
 
@@ -113,15 +104,13 @@ static ssize_t chr_dev_read(struct file *filp, char __user *buf, size_t count, l
     return tmp;
 }
 
-static int __init chrdev_init(void)
-{
+static int __init chrdev_init(void) {
     int ret = 0;
     printk("chrdev init\n");
 
     // 获取设备号
     ret = alloc_chrdev_region(&devno, 0, DEV_CNT, DEV_NAME);
-    if (ret < 0)
-    {
+    if (ret < 0) {
         printk("fail to alloc devno \n");
         goto alloc_err;
     }
@@ -131,8 +120,7 @@ static int __init chrdev_init(void)
 
     // 添加设备
     ret = cdev_add(&chr_dev, devno, DEV_CNT);
-    if (ret < 0)
-    {
+    if (ret < 0) {
         printk("fail to add cdev\n");
         goto add_err;
     }
@@ -146,8 +134,7 @@ alloc_err:
 
 module_init(chrdev_init);
 
-static void chrdev_exit(void)
-{
+static void chrdev_exit(void) {
     printk("exit into \n");
     unregister_chrdev_region(devno, DEV_CNT);
 
