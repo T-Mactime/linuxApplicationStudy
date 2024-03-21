@@ -7,5 +7,6 @@
         "cdev.h": "c",
         "kobject.h": "c",
         "fs.h": "c"
-    }
+    },
+    "clang-format.executable": "/home/sch/Documents/code/embedStudy/.vscode/clang-format"
 }
