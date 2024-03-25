@@ -4,7 +4,8 @@
             "name": "Linux",
             "includePath": [
                 "${workspaceFolder}/**",
-                "/home/sch/Documents/ebf_linux_kernel/build_image/build/**"
+                "/home/sch/Documents/lib/build_image/build/**",
+                "/usr/lib/gcc-cross/arm-linux-gnueabihf/9/**"
             ],
             "defines": [],
             "compilerPath": "",
