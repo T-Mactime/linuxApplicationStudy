@@ -1,0 +1,13 @@
+ARCH=arm
+CROSS_COMPILE=arm-linux-gnueabihf-
+
+export ARCH CROSS_COMPILE
+
+obj-m rgb_led.o
+out = test_app
+
+all:
+	$(MAKE) -C $(KERNER_DIR) M=$(CURDIR) modules
+	$(CROSS_COMPILE)gcc -o $(out) test_app.c
+
+.PHONY:clean 
