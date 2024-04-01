@@ -9,6 +9,6 @@
         "fs.h": "c",
         "list.h": "c"
     },
-    "clang-format.executable": "/home/sch/Documents/code/embedStudy/.vscode/clang-format",
+    "clang-format.executable": "/home/sch/Documents/code/embedStudy/.clang-format",
     "C_Cpp.errorSquiggles": "disabled"
 }
