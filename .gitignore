@@ -3,3 +3,4 @@
 *.ko
 *.cmd
 *.order
+linux_kernel/deviceTreeRGB/compile_commands.json
