@@ -4,3 +4,4 @@
 *.cmd
 *.order
 linux_kernel/deviceTreeRGB/compile_commands.json
+linux_kernel/deviceTreeRGB/test_app
