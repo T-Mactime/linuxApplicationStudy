@@ -10,5 +10,6 @@
         "list.h": "c"
     },
     "clang-format.executable": "/home/sch/Documents/code/embedStudy/.clang-format",
-    "C_Cpp.errorSquiggles": "disabled"
+    "C_Cpp.errorSquiggles": "disabled",
+    "C_Cpp.clang_format_style": "file:/home/sch/Documents/code/embedStudy/.clang-format"
 }
