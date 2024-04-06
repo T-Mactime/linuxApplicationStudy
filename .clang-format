@@ -21,15 +21,15 @@ BraceWrapping:
   AfterClass:      false
   AfterControlStatement: false
   AfterEnum:       false
-  AfterFunction:   true
+  AfterFunction:   false
   AfterNamespace:  false
   AfterObjCDeclaration: false
-  AfterStruct:     true
+  AfterStruct:     false
   AfterUnion:      false
-  AfterExternBlock: true
+  AfterExternBlock: false
   BeforeCatch:     false
   BeforeElse:      false
-  IndentBraces:    true
+  IndentBraces:    false
 BreakBeforeBinaryOperators: None
 BreakBeforeBraces: Custom
 BreakBeforeTernaryOperators: true
