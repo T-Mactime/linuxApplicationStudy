@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
 
 
     /*打开文件*/
-    int fd = open("/dev/rgb-leds", O_RDWR);
+    int fd = open("/dev/rgb_led", O_RDWR);
     if(fd < 0)
     {
 		printf("open file : %s failed !\n", argv[0]);

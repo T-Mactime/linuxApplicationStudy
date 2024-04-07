@@ -162,7 +162,7 @@ alloc_error:
 }
 
 // 这里定义rgb led 设备的属性信息
-static const struct of_device_id rgb_led[] = {{.compatible = "fire,rgb-led"},
+static const struct of_device_id rgb_led[] = {{.compatible = "fire,rgb_led"},
                                               {}};
 
 /*定义平台设备结构体*/
