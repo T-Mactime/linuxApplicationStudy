@@ -1,0 +1,29 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ARCH	Makefile	/^ARCH=arm$/;"	m
+CROSS_COMPILE	Makefile	/^CROSS_COMPILE=arm-linux-gnueabihf-$/;"	m
+DEV_CNT	get_dts_info.c	20;"	d	file:
+DEV_NAME	get_dts_info.c	19;"	d	file:
+__this_module	get_dts_info.mod.c	/^__visible struct module __this_module$/;"	v	typeref:struct:module
+__used	get_dts_info.mod.c	/^__used$/;"	v	file:
+__used	get_dts_info.mod.c	/^__used$/;"	v	typeref:struct:____versions	file:
+led_chr_dev	get_dts_info.c	/^static struct cdev led_chr_dev;$/;"	v	typeref:struct:cdev	file:
+led_chr_dev_class	get_dts_info.c	/^struct class* led_chr_dev_class;$/;"	v	typeref:struct:class
+led_chr_dev_fops	get_dts_info.c	/^static struct file_operations led_chr_dev_fops = {$/;"	v	typeref:struct:file_operations	file:
+led_chr_dev_open	get_dts_info.c	/^static int led_chr_dev_open(struct inode* inode, struct file* filp) {$/;"	f	file:
+led_chr_dev_release	get_dts_info.c	/^static int led_chr_dev_release(struct inode* inode, struct file* filp) {$/;"	f	file:
+led_chrdev_exit	get_dts_info.c	/^module_exit(led_chrdev_exit);$/;"	v
+led_chrdev_exit	get_dts_info.c	/^static void __exit led_chrdev_exit(void) {$/;"	f	file:
+led_chrdev_init	get_dts_info.c	/^led_chrdev_init(void) {$/;"	f	file:
+led_chrdev_init	get_dts_info.c	/^module_init(led_chrdev_init);$/;"	v
+led_device_node	get_dts_info.c	/^struct device_node* led_device_node;         \/\/ led 的设备树节点$/;"	v	typeref:struct:device_node
+led_devno	get_dts_info.c	/^static dev_t led_devno;$/;"	v	file:
+obj-m	Makefile	/^obj-m := get_dts_info.o$/;"	m
+out_values	get_dts_info.c	/^unsigned int out_values[18]; \/\/ 保存读取得到REG属性值$/;"	v
+rgb_led_red_device_node	get_dts_info.c	/^struct device_node* rgb_led_red_device_node; \/\/ rgb_led_red 红灯节点$/;"	v	typeref:struct:device_node
+rgb_led_red_property	get_dts_info.c	/^struct property* rgb_led_red_property;       \/\/ 定义属性结构体指针$/;"	v	typeref:struct:property
+size	get_dts_info.c	/^int size = 0;$/;"	v
