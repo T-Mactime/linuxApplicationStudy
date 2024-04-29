@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <unistd.h>
+
 int main(int argc, char* argv[]) {
     printf("led_tiny test\n");
     /*判断输入的命令是否合法*/

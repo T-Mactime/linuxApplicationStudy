@@ -1,4 +1,4 @@
-ARCH=arm 
+ARCH=arm
 CROSS_COMPILE=arm-linux-gnueabihf-
 
 export ARCH CROSS_COMPILE
