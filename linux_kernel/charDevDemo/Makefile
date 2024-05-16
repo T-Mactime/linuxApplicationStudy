@@ -1,4 +1,3 @@
-KERNEL_DIR=/home/sch/Documents/ebf_linux_kernel/build_image/build
 
 ARCH=arm
 CROSS_COMPILE=arm-linux-gnueabihf-
