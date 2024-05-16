@@ -9,7 +9,7 @@
         "fs.h": "c",
         "list.h": "c"
     },
-    "clang-format.executable": "/home/sch/Documents/code/embedStudy/.clang-format",
+    "clang-format.executable": "/home/dev/Documents/dev/embedstudy/.clang-format",
     "C_Cpp.errorSquiggles": "disabled",
-    "C_Cpp.clang_format_style": "file:/home/sch/Documents/code/embedStudy/.clang-format"
+    "C_Cpp.clang_format_style": "file:/home/dev/Documents/dev/embedstudy/.clang-format"
 }
