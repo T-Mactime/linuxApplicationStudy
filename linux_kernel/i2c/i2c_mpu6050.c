@@ -1,21 +1,21 @@
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/cdev.h>
-#include <linux/uaccess.h>
-#include <linux/i2c.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/ide.h>
-#include <linux/errno.h>
-#include <linux/gpio.h>
-#include <linux/of.h>
+#include <asm/io.h>
 #include <asm/mach/map.h>
+#include <linux/cdev.h>
+#include <linux/delay.h>
+#include <linux/device.h>
+#include <linux/errno.h>
+#include <linux/fs.h>
+#include <linux/gpio.h>
+#include <linux/i2c.h>
+#include <linux/ide.h>
+#include <linux/init.h>
+#include <linux/kernel.h>
+#include <linux/module.h>
+#include <linux/of.h>
 #include <linux/of_address.h>
 #include <linux/of_gpio.h>
-#include <asm/io.h>
-#include <linux/device.h>
+#include <linux/types.h>
+#include <linux/uaccess.h>
 
 #include <linux/platform_device.h>
 
@@ -31,9 +31,10 @@ struct class* class_mpu6050;
 struct device* device_mpu6050;
 struct device_node* mpu6050_device_node;
 
-struct i2c_client *mpu6050_client = NULL;
+struct i2c_client* mpu6050_client = NULL;
 
-static int i2c_write_mpu6050(struct i2c_client *mpu6050_client, u8 address, u8 data){
+static int i2c_write_mpu6050(struct i2c_client* mpu6050_client, u8 address,
+                             u8 data) {
     int error = 0;
     u8 write_data[2];
     struct i2c_msg send_msg;
@@ -47,14 +48,15 @@ static int i2c_write_mpu6050(struct i2c_client *mpu6050_client, u8 address, u8 d
     send_msg.len = 2;
 
     error = i2c_transfer(mpu6050_client->adapter, &send_msg, 1);
-    if(error != 1){
+    if (error != 1) {
         printk(KERN_DEBUG "\n i2c transfer error \n");
         return -1;
     }
     return 0;
 }
 
-static int i2c_read_mpu6050(struct i2c_client *mpu6050_client, u8 address, void*data, u32 length){
+static int i2c_read_mpu6050(struct i2c_client* mpu6050_client, u8 address,
+                            void* data, u32 length) {
     int error = 0;
     u8 address_data = address;
     struct i2c_msg mpu6050_msg[2];
@@ -70,10 +72,93 @@ static int i2c_read_mpu6050(struct i2c_client *mpu6050_client, u8 address, void*
     mpu6050_msg[0].len = 1;
 
     error = i2c_transfer(mpu6050_client->adapter, mpu6050_msg, 2);
-    if(error != 2){
+    if (error != 2) {
         printk(KERN_DEBUG "\n i2c read mpu 6050 error \n");
         return -1;
     }
     return 0;
 }
 
+static int mpu6050_init(void) {
+    int error = 0;
+
+    errot += i2c_write_mpu6050(mpu6050_client, PWR_MGMT_1, 0x00);
+    error += i2c_write_mpu6050(mpu6050_client, SMPLRT_DIV, 0x07);
+    error += i2c_write_mpu6050(mpu6050_client, CONFIG, 0x06);
+    error += i2c_write_mpu6050(mpu6050_client, ACCEL_CONFIG, 0x01);
+
+    if (error < 0) {
+        printk(KERN_DEBUG "\n mpu6050 init error \n");
+        return -1;
+    }
+
+    return 0;
+}
+
+static int mpu6050_open(struct inode *inode, struct file*filp){
+    mpu6050_init();
+    return 0;
+}
+
+static int mpu6050_read(struct file* filp, char __user* buf, size_t cnt,
+                        loff_t* off) {
+    char data_H;
+    char data_L;
+
+    int error;
+
+    short mpu6050_result[6];
+
+    i2c_read_mpu6050(mpu6050_client, ACCEL_XOUT_H, &data_H, 1);
+    i2c_read_mpu6050(mpu6050_client, ACCEL_XOUT_L, &data_L, 1);
+    mpu6050_result[0] = data_H << 8;
+    mpu6050_result[0] = += data_L;
+
+    i2c_read_mpu6050(mpu6050_client, ACCEL_YOUT_H, &data_H, 1);
+    i2c_read_mpu6050(mpu6050_client, ACCEL_YOUT_L, &data_H, 1);
+    mpu6050_result[1] = data_H << 8;
+    mpu6050_result[1] += data_L;
+
+    i2c_read_mpu6050(mpu6050_client, ACCEL_ZOUT_H, &data_H, 1);
+    i2c_read_mpu6050(mpu6050_client, ACCEL_ZOUT_L, &data_L, 1);
+    mpu6050_result[2] = data_H << 8;
+    mpu6050_result[2] += data_L;
+
+    i2c_read_mpu6050(mpu6050_client, GYRO_XOUT_H, &data_H, 1);
+    i2c_read_mpu6050(mpu6050_client, GYRO_XOUT_L, &data_L, 1);
+    mpu6050_result[3] = data_H << 8;
+    mpu6050_result[3] += data_L;
+
+    i2c_read_mpu6050(mpu6050_client, GYRO_YOUT_H, &data_H, 1);
+    i2c_read_mpu6050(mpu6050_client, GYRO_YOUT_L, &data_L, 1);
+    mpu6050_result[4] = data_H << 8;
+    mpu6050_result[4] += data_L;
+
+    i2c_read_mpu6050(mpu6050_client, GYRO_ZOUT_H, &data_H, 1);
+    i2c_read_mpu6050(mpu6050_client, GYRO_ZOUT_L, &data_L, 1);
+    mpu6050_result[5] = data_H << 8;
+    mpu6050_result[5] += data_L;
+
+    error = copy_to_user(buf, mpu6050_result, cnt);
+    if(error != 0){
+        printk("copu to user error\n");
+        return -1;
+    }
+
+    return 0;
+}
+
+static int mpu6050_release(struct inode *inode, struct file*filp){
+    return 0;
+}
+
+static struct file_operations mpu6050_chr_dev_fops = {
+    .owner = THIS_MODULE,
+    .open = mpu6050_open,
+    .read = mpu6050_read,
+    .release = mpu6050_release;
+};
+
+static int mpu6050_probe(struct i2c_client*client, const struct i2c_device_id* id){
+    int ret = -1;
+}
