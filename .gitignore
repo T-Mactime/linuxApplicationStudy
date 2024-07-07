@@ -6,4 +6,4 @@
 linux_kernel/deviceTreeRGB/compile_commands.json
 linux_kernel/deviceTreeRGB/test_app
 linux_kernel/button_interrupt/interrupt/Module.symvers
-linux_kernel/button_interrupt/interrupt/test_app
+**/test_app
