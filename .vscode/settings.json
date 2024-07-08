@@ -7,7 +7,8 @@
         "cdev.h": "c",
         "kobject.h": "c",
         "fs.h": "c",
-        "list.h": "c"
+        "list.h": "c",
+        "delay.h": "c"
     },
     "clang-format.executable": "/home/dev/Documents/dev/embedstudy/.clang-format",
     "C_Cpp.errorSquiggles": "disabled",
